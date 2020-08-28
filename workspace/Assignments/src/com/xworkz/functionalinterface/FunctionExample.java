@@ -5,6 +5,7 @@ import java.util.function.*;
 public class FunctionExample {
 
 	public static void main(String[] args) {
+		
 		Function<Integer, Integer> s = i -> i * i;
 		System.out.println(s.apply(4));
 

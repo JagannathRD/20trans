@@ -1,4 +1,4 @@
-package com.xworkz.fi;
+package com.xworkz.functionalinterface;
 
 import java.util.function.*;
 
