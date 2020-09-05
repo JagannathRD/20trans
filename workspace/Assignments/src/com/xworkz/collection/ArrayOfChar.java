@@ -1,6 +1,7 @@
 package com.xworkz.collection;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class ArrayOfChar {
 
@@ -14,6 +15,7 @@ public class ArrayOfChar {
 		ch.add('U');
 		ch.add('J');
 		ch.add('D');
+		
 
 		System.out.println("Is empty: " + ch.isEmpty());
 		System.out.println("For Loop");
@@ -32,6 +34,9 @@ public class ArrayOfChar {
 		System.out.println("Contains Z ? " + ch.contains('Z'));
 		ch.remove(new Character('Z'));
 		System.out.println(ch);
+		
+		Collections.sort(ch);
+		System.out.println("sorted list "+ch);
 	}
 
 }

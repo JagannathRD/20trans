@@ -22,4 +22,9 @@ public class Bike {
 	void stop() {
 		System.out.println("Bike stopped");
 	}
+
+	@Override
+	public String toString() {
+		return "Bike [brand=" + brand + ", cc=" + cc + ", price=" + price + "]";
+	}
 }

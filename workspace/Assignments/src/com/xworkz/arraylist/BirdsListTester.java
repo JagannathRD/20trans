@@ -22,7 +22,7 @@ public class BirdsListTester {
 		
 		//System.out.println(bidrs.size());
 		//int last=birds.get(bidrs.size()-1);
-		//System.out.println("Last element of "+birds.get(bidrs.size()-1));
+		System.out.println("Last element of "+birds.get(birds.size()-1));
 		
 		birds.set(2, (new Birds("Sparrow", "Grey", 0.2)));
 		for (Birds birds2 : birds) {
