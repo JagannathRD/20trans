@@ -1,0 +1,9 @@
+<h1 #wat style="color: red;">App Component</h1>
+<BUtton (click)='enableAbout()'>ABOUT</BUtton>
+<BUtton (click)='enableCourse()'>COURSE</BUtton>
+<BUtton (click)='enableReview()'>REVIEW</BUtton>
+
+<app-about #web ></app-about>
+<app-course *ngIf='enableC'></app-course>
+<app-review *ngIf='enableR'></app-review>
+{{wat.style}}

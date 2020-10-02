@@ -1,0 +1,31 @@
+<p style="color: blue;">Submit your expense</p>
+
+<div>
+    <form >
+        <div>
+            <label >Expense type</label>
+            <select #expenseType >
+                <option >Broad Band</option>
+                <option >Transport</option>
+                <option >Food</option>
+            </select>
+        </div>
+        <div>
+            <label >Amount</label>
+            <input type="text" #amount>
+        </div>
+        <div>
+            <label >Date</label>
+            <input type="date" #date>
+        </div>
+        <div>
+            <label >Comments</label>
+            <textarea  cols="30" rows="10" #comments></textarea>
+        </div>
+        <button type="button" (click)="onExpense(expenseType.value,amount.value,date.value,comments.value)">Submit</button>
+    </form>
+    <h3 *ngIf="formSubmitted">Form Submitted Successfully</h3>
+</div>
+<div>
+    <p appbold enter='blue' leave='red'>Welcome u all</p>
+</div>

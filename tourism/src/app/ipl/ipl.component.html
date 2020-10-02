@@ -1,0 +1,62 @@
+<p>ipl works!</p>
+<br>
+<div>
+   ipl team size: {{teamNames.length}}
+</div>
+<ul>
+    <li *ngFor="let teams of teamNames">{{teams}}</li>
+</ul>
+<p>
+    team owners:{{teamOwners}}
+</p>
+<div>
+    <button (click)="showPolitician()">show Politician Name</button>
+
+    Politician Names:{{politicianNames | async}}
+    <ul>
+        <li *ngFor="let pn of politicianNames | async">{{pn}}</li>
+    </ul>
+</div>
+
+<div>
+    <button (click)="showComputer()">Show Computer Data</button>
+    
+  Touch: {{computer}}
+</div>
+
+<div>
+    <button (click)="showUsers()">Show Users</button>
+
+    
+
+    <!-- <ul *ngFor="let list of userData">
+        <li>{{list.id}}</li>
+        <li>{{list.name}}</li>
+        
+    </ul>
+    <p>{{userData}}</p>
+    
+</div> -->
+
+<table border="2">
+    <thead >
+        <tr><td>Id</td>
+        <td>Name</td>
+        <td>User Name</td>
+        <td>Email</td>
+        <td>Address</td></tr>
+    </thead>
+
+    <tbody>
+        <tr rowspan="4" *ngFor="let list of userData"><td>{{list.id}}</td>
+            <td>{{list.name}}</td>
+            <td>{{list.username}}</td>
+            <td>{{list.email}}</td>
+            <td  ><tr>{{list.address.street}}</tr>
+                <tr>{{list.address.suite}}</tr>
+               <tr>{{list.address.city}}</tr> 
+               <tr>{{list.address.zipcode}}</tr> 
+            </td></tr>
+    </tbody>
+
+</table>

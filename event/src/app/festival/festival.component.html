@@ -1,0 +1,20 @@
+<h2>This from festival component</h2>
+
+<table border="3">
+    <thead>
+        <th>Name</th>
+        <th>Date</th>
+        <th>Special</th>
+        <th>Days</th>
+    </thead>
+
+    <tr *ngFor="let fes of dataList">
+        <td>{{fes.name}}</td>
+        <td>{{fes.date}}</td>
+        <td>{{fes.special}}</td>
+        <td>{{fes.days}}</td>
+    </tr>
+</table>
+
+<h4 *ngIf="!arrayBig">festival is less</h4>
+<h4 *ngIf="arrayBig">festival is more</h4>

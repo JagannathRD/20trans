@@ -1,0 +1,8 @@
+<h1 style="color: cyan;">This is aquarium component</h1>
+<p style="color: darkgoldenrod;">Type:{{aquarium.type}} Price:{{aquarium.price}} 
+    Size:{{aquarium.size}} WithPump:{{aquarium.withPump}}
+    Capacity:{{aquarium.liters}}
+   </p>
+   <div *ngIf="!aquarium.withPump">Fish Types
+   <h2 *ngFor="let f of fishTypes">{{f}}</h2>
+</div>

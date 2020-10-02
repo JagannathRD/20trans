@@ -1,0 +1,10 @@
+<p>{{voterName}}
+    <button class="btn btn-success" value="Kodachadri"  
+    [disabled]='disableButton' 
+    (click)='onPress($event.target.value)'>Kodachadri</button>
+    
+    <button class="btn btn-success" value="Puri" 
+    [disabled]='disableButton'#ref 
+    (click)='onPress(ref.value)'>Puri</button>
+</p>
+

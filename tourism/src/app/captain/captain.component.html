@@ -1,0 +1,12 @@
+<p>captain works!</p>
+<form  [formGroup]="captainForm" (ngSubmit)="onSubmit()">
+   <div >
+        Name: <input type="text" formControlName="name" minlength="4" required>
+   <br> Team: <input type="text" formControlName="team" minlength="5" required>
+   <br> Location: <input type="text" formControlName="location" required> 
+   </div>
+
+   <button class="btn btn-success" [disabled]="!captainForm.valid">Submit</button>
+</form>
+
+<p>Form Status: {{ captainForm.status}}</p>

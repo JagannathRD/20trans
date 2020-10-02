@@ -1,0 +1,9 @@
+<h1>Planet component works????</h1>
+
+<p>
+    Planet Name:{{planet.name}} Planet Liveable:{{planet.isLiveable}}
+    Distance from Sun:{{planet.distanceFromSun}}
+
+    <span style="color: blue;" *ngIf='planet.isLiveable'>The planet is Liveable</span>
+    <span style="color: red;" *ngIf='!planet.isLiveable'>The planet is dead</span>
+</p>

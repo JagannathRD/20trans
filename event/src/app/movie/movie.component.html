@@ -1,0 +1,22 @@
+<h2>Movie Component</h2>
+
+
+<table border="5">
+    <thead>
+    <th>Name</th>
+    <th>Producer</th>
+   <th>Language</th> 
+   <th>Budget</th> 
+   <th>High</th>
+    </thead>
+
+    <tr *ngFor="let mov of dataList">
+        <td>{{mov.name}}</td>
+        <td>{{mov.producer}}</td>
+        <td>{{mov.language}}</td>
+        <td >{{mov.budget}}</td>
+        <td *ngIf="mov.budget>20" style="color:red;">High</td>
+        <td *ngIf="mov.budget<=20" style="color: blueviolet;">Low</td>
+       
+    </tr>
+</table>

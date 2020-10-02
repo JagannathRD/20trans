@@ -1,0 +1,41 @@
+<p>iplform works!</p>
+<span>Average of team:</span><br>
+<form form>
+<div>
+    IPL team name: <input type="text" minlength="3" required 
+    [formControl]='teams'>{{teams.value}}
+    <span *ngIf="teams.errors.minlength ">Min 3 char required</span>
+
+</div><br>
+
+<div>
+    Owner: <input type="text" required>
+</div><br>
+
+<div>
+ <label >Captain:</label>
+ <select>
+     <option>--select--</option>
+     <option>M S Dhoni</option>
+     <option>K L Rahul</option>
+     <option>Steve Smith</option>
+     <option>Rohit Sharma</option>
+     <option>David Warner</option>
+     <option>Shreyas Iyer</option>
+     <option>Dinesh Kartik</option>
+     <option>Virat Kohli</option>
+</select>
+   
+</div><br>
+
+<div>
+   Total matches played: <input type="text" required>
+</div><br>
+
+<div>
+    Total matches won: <input type="text" required>
+</div><br>
+
+<button class="btn btn-success">Submit</button>
+
+</form>

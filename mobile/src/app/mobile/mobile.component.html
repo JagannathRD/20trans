@@ -1,0 +1,28 @@
+<h2>Mobile Component</h2>
+
+<img [src]=imageSrc height="120" width="100" >
+<br>
+<label for="">Select Mobile Brand </label>
+<select name="" id="">
+    <option *ngFor="let b of brand"[value]="b">{{b}}</option>
+</select>
+<br>
+<label>Price is: {{price}}</label>
+
+<br>
+<label for="">Select Mobile Color </label>
+<select name="" id="">
+    <option *ngFor="let c of color"[value]="c">{{c}}</option>
+</select>
+
+<br>
+<label for="">Available </label>
+<label *ngFor="let a of avail" [value]="a">
+<input type="radio" name="avail">
+<label  >{{a}}</label>
+</label>
+<br>
+Mobile made in: {{madeIn}}
+<br>
+<button (click)="clickMe()">Book</button>
+<br>{{book}}
