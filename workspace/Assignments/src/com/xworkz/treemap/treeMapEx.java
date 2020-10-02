@@ -12,6 +12,7 @@ public class treeMapEx {
 		monthDays.put("March", 31);
 		
 		System.out.println(monthDays);
+		monthDays.entrySet();
 		System.out.println("mme");
 	}
 

@@ -12,8 +12,9 @@ public class LinkedHashMapex {
 		lHM.put(580001,"J P Nagar");
 		
 		System.out.println(lHM);
-		
-		
+		System.out.println(lHM.get(560040));
+		System.out.println(lHM.get(560042));
+		System.out.println(lHM.get(580001));
 		System.out.println("mme");
 
 	}

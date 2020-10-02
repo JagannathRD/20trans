@@ -1,5 +1,6 @@
 package com.xworkz.hashmap;
 
+import java.util.Comparator;
 import java.util.LinkedHashMap;
 
 public class TraineeTester {
@@ -13,6 +14,7 @@ public class TraineeTester {
 		trainee.put(new Trainee(3, "Roopa"), 5);
 
 		System.out.println(trainee);
+	
 
 		System.out.println("mme");
 
