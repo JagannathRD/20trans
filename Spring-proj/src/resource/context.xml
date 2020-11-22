@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean class="com.xworkz.mountain.part.Virus" id="virus" lazy-init="default"></bean>
+	<bean class="com.xworkz.mountain.part.Festival" id="fesival"></bean>
+	
+	<bean class="java.lang.String" id="string"></bean>
+	<bean class="java.lang.Thread" id="thread"></bean>
+	<bean class="java.lang.reflect.Array" id="array"></bean>
+	<bean class="java.util.ArrayList" id="arraylist"></bean>
+	<bean class="java.util.HashSet" id="hashset"></bean>
+	
+	<bean class="java.util.PriorityQueue" id="priorityqueue"></bean>
+	<bean class="java.util.HashMap" id="hashmap"></bean>
+	<bean class="java.util.Vector" id="vector"></bean>
+	<bean class="java.io.IOException" id="ioexception"></bean> 
+	<bean class="java.util.TreeMap" id="treemap"></bean>
+	<bean class="java.lang.ArithmeticException" id="file"></bean>
+	
+</beans>
